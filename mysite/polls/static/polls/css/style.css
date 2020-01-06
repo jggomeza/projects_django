@@ -1,0 +1,17 @@
+li a {
+    color: rgba(127, 81, 173, .6941176470588235);
+    text-decoration: none;
+}
+
+li a:hover {
+    color: rgba(127, 81, 173, .9607843137254902);
+}
+
+li{
+	list-style-type: decimal;
+	color: rgba(127, 81, 173, .6941176470588235);
+}
+
+body {
+    background: white url("../images/background.jpg") no-repeat;
+}
