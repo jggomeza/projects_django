@@ -1,6 +1,6 @@
 @echo /*!
 @echo * Creador de directorios
-@echo * @author Ing. Josï¿½ Gï¿½mez
+@echo * @author Ing. José Gómez
 @echo * Date: 2019-09-03
 @echo */
 

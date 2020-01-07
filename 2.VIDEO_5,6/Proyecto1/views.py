@@ -16,8 +16,10 @@ def saludo(request): # primera vista
 	# apellido = "Gómez"
 
 	fecha_actual = datetime.datetime.now()
-	doc_externo = open("C:/xampp/htdocs/APLICACIONES_DE_PYTHON/projectsDjango/2.VIDEO_5,6/Proyecto1/template/template1.html")
+	#doc_externo = open("C:/xampp/htdocs/APLICACIONES_DE_PYTHON/projectsDjango/2.VIDEO_5,6/Proyecto1/template/template1.html")
 	
+	doc_externo = open("/home/jgomeza/Documentos/ARCHIVOS/APLICACIONES_DE_PYTHON/projectsDjango/2.VIDEO_5,6/Proyecto1/template/template1.html")
+
 	plt = Template(doc_externo.read()) # Creacion de un objeto template
 	doc_externo.close() # Se cierra el documento para que no se consuman recursos innecesarios
 
