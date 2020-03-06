@@ -18,7 +18,7 @@ def saludo(request): # primera vista
 	temas_del_curso = ["Plantillas", "Modelos", "Formularios", "Vistas", "Despliegue"]
 
 	fecha_actual = datetime.datetime.now()
-	doc_externo = open("C:/xampp/htdocs/APLICACIONES_DE_PYTHON/projectsDjango/3.VIDEO_7/Proyecto1/template/template1.html")
+	doc_externo = open("Proyecto1/template/template1.html")
 	
 	plt = Template(doc_externo.read()) # Creacion de un objeto template
 	doc_externo.close() # Se cierra el documento para que no se consuman recursos innecesarios
