@@ -54,7 +54,7 @@ ROOT_URLCONF = 'Proyecto1.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['C:/xampp/htdocs/APLICACIONES_DE_PYTHON/projectsDjango/5.VIDEO_9/Proyecto1/template'],
+        'DIRS': ['Proyecto1/template'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
