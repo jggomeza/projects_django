@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>..::Template 1 de Django::..</title>
+</head>
+<body>
+	{% include "superior/barra.html" %} <!-- Incluir el contenido de una plantilla dentro de esta -->
+
+	<h1 style="color: red">Hola alumnos estamos viendo nuestra primera plantilla</h1>
+
+	{# No temas diseñador ignora esta parte #} <!-- COMENTARIO DE UNA SOLA LINEA -->
+
+	{% comment %}  <!-- COMENTARIO DE VARIAS LINEAS -->
+		NO TEMAS DISEÑADOR!
+		IGNORA ESTA PARTE
+	{% endcomment %}
+
+	{% if nombre_persona == "Jose" %}
+		<p><strong>El curso lo imparte el desarrollador titular</strong></p>
+	{% else %}
+		<p><strong>El curso lo imparte el desarrollador suplente</strong></p>
+	{% endif %}
+
+	<p>El nombre del desarrollador es {{nombre_persona|upper}} {{apellido_persona.upper}}</p>
+	<p>Estamos viendo el tema de las plantllas a d&iacute;a {{fecha_actual.day}}/{{fecha_actual.month}}/{{fecha_actual.year}}</p>
+
+	<p><strong>Temas del curso</strong></p>
+	<!-- <p>{{temas.1}}</p> --> 
+	<ul>
+		{% if temas %}
+			{% for tema in temas%}
+				<li>{{tema|first|lower}}</li>
+			{% endfor %}
+		{% else %}
+			<p>No hay elementos que mostrar</p>
+		{% endif %}
+	</ul>
+</body>
+</html>

@@ -80,8 +80,8 @@ def calculaEdad(request, edad, anio): # Cuarta vista
 
 def cursoC(request):
 	fechaActual = datetime.datetime.now()
-	return render(request, 'CursoC.html', {"dameFecha":fechaActual})
+	return render(request, 'cursoC.html', {"dameFecha":fechaActual})
 
 def cursoCss(request):
 	fechaActual = datetime.datetime.now()
-	return render(request, 'CursoCss.html', {"dameFecha":fechaActual})
+	return render(request, 'cursoCss.html', {"dameFecha":fechaActual})
