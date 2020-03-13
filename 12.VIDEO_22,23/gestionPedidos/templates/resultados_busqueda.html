@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Resultados</title>
+</head>
+<body>
+    <p>Estas buscando: <strong>{{query}}</strong></p>
+    {% if articulos %}
+    	<p>Articulos encontrados: {{articulos|length}} articulos</p>
+
+    	<table>
+    		<thead>
+    			<th>Número ID</th>
+    			<th>Nombre Articulo</th>
+    			<th>Sección</th>
+    			<th>Precio articulo</th>
+    		</thead>
+    		<tbody>
+	    		{% for articulo in articulos %}
+	    			<tr>
+		    			<td>{{articulo.id}}</td>
+		    			<td>{{articulo.nombre}}</td>
+		    			<td>{{articulo.seccion}}</td>
+		    			<td>{{articulo.precio}}</td>
+	    			</tr>
+	    		{% endfor %}
+    		</tbody>
+    	</table>
+    {% else %}
+    	<p>No se ha encontrado el articulo</p>
+    {% endif %}
+</body>
+</html>
