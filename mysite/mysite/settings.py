@@ -25,6 +25,7 @@ SECRET_KEY = 'w)wgvs9xz5fht998*v(h0bct*qm&=8-5g((ars^#4qa0*@^kco'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+# ALLOWED_HOSTS = ['192.168.8.100'] # Aqui se coloca la direccion IP del server para que pueda servir en la red
 ALLOWED_HOSTS = []
 
 
