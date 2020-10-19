@@ -3,6 +3,20 @@
 <head>
 	<meta charset="utf-8">
 	<title>..::Template 1 de Django::..</title>
+	<style>
+		#barra{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			text-transform: uppercase;
+			background: #D826BFFF;
+		}
+
+		#barra li{
+			display: inline;
+			margin: 0 20px;
+		}
+	</style>
 </head>
 <body>
 	{% include "superior/barra.html" %} <!-- Incluir el contenido de una plantilla dentro de esta -->

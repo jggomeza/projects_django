@@ -3,11 +3,25 @@
 <head>
 	<meta charset="UTF-8">
 	<title>{% block title %} {% endblock %}</title>
+	<style>
+		#barra{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			text-transform: uppercase;
+			background: #D826BFFF;
+		}
+
+		#barra li{
+			display: inline;
+			margin: 0 20px;
+		}
+	</style>
 </head>
 <body>
 	<h1 style="background-color: darkolivegreen; color white; text-align: center;">Pildoras Informáticas</h1>
 	{% include "superior/barra.html" %} <!-- Incluir el contenido de una plantilla dentro de esta -->
-	<h3 style="text-align: right;">Curso de programación, ofimatica t diseño web!</h3>
+	<h3 style="text-align: right;">Curso de programación, ofimatica y diseño web!</h3>
 
 	{% block content %} {% endblock %}
 	
